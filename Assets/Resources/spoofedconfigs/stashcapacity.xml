@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+	<stash level="1" capacity="100" iscrystal="true" price="0"/>
+	<stash level="2" capacity="110" iscrystal="true" price="10"/>
+	<stash level="3" capacity="125" iscrystal="true" price="20"/>
+	<stash level="4" capacity="150" iscrystal="true" price="30"/>
+	<stash level="5" capacity="175" iscrystal="true" price="40"/>
+	<stash level="6" capacity="200" iscrystal="true" price="50"/>
+	<stash level="7" capacity="250" iscrystal="true" price="60"/>
+	<stash level="8" capacity="330" iscrystal="true" price="70"/>
+	<stash level="9" capacity="410" iscrystal="true" price="80"/>
+	<stash level="10" capacity="500" iscrystal="true" price="90"/>
+</root>
