@@ -48,7 +48,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -146,9 +146,23 @@ MonoBehaviour:
   isSfx: 1
   audioClips:
   - {fileID: 8300000, guid: 92653afa04e4ece489e91355211c72b9, type: 3}
+  - {fileID: 8300000, guid: 73d8fad5a56351947a09fedcca894550, type: 3}
+  - {fileID: 8300000, guid: 97ee12f9ba679242a93ad1474c263c37, type: 3}
+  - {fileID: 8300000, guid: 48b906f018a3be04eb68061588bf47f3, type: 3}
+  - {fileID: 8300000, guid: 38087b58848a6794187c0bbd5f056474, type: 3}
+  - {fileID: 8300000, guid: 010a9d18189375349839bd93d223225a, type: 3}
+  - {fileID: 8300000, guid: fece19cb05e1af749a2a600a03f10373, type: 3}
+  - {fileID: 8300000, guid: c62c5854260ad7543b805405dbc66348, type: 3}
+  - {fileID: 8300000, guid: af35d2ddfffd0334f8de311e42f3b195, type: 3}
+  - {fileID: 8300000, guid: a7b743c29e3d1a87e8b261e9663511d2, type: 3}
+  - {fileID: 8300000, guid: 452ec7f41d29c3a41afed4044b0a94c3, type: 3}
+  - {fileID: 8300000, guid: 923136083f7d15f4e9ae14c16818e991, type: 3}
+  - {fileID: 8300000, guid: d2c61b72c63c34441a5fe98c2eb365ca, type: 3}
+  - {fileID: 8300000, guid: e147a6e3541bf1a478127bd4635f7839, type: 3}
+  - {fileID: 8300000, guid: ce5422370e5bf3540a52cc10426880e9, type: 3}
   probability: []
   volumOffset: 0
-  pitchOffset: 0
+  pitchOffset: 0.5
   loopMode: 1
   cutoff: 0
   delayTime: 0

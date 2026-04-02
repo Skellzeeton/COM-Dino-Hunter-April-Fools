@@ -85,7 +85,7 @@ public class iIAPCenter : iBaseCenter
 				}
 				if (GetAttribute(childNode, "money", ref value))
 				{
-					cIAPInfo.fMoney = float.Parse(value);
+					cIAPInfo.fMoney = MyUtils.ParseFloat(value);
 				}
 				if (GetAttribute(childNode, "iscrystal", ref value))
 				{

@@ -124,7 +124,7 @@ public class iTaskCenter : iBaseCenter
 		}
 		if (MyUtils.GetAttribute(node, "EggLife", ref value))
 		{
-			cTaskInfoCollect.fLife = float.Parse(value);
+			cTaskInfoCollect.fLife = MyUtils.ParseFloat(value);
 		}
 		return cTaskInfoCollect;
 	}
@@ -166,7 +166,7 @@ public class iTaskCenter : iBaseCenter
 		}
 		if (MyUtils.GetAttribute(node, "ZhaLanLife", ref value))
 		{
-			cTaskInfoDefence.fLife = float.Parse(value);
+			cTaskInfoDefence.fLife = MyUtils.ParseFloat(value);
 		}
 		return cTaskInfoDefence;
 	}

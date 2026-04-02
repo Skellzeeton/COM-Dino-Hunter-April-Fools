@@ -17,7 +17,7 @@
 		<ai id="10201" skill="30000" skillrate="100" behavior="3" />	
 			
 		<!-- ����Ѹ����AI -->
-		<ai id="20101" skill="30000" skillrate="100" behavior="1" />	
+		<ai id="20101" skill="30000,30002" skillrate="100" behavior="1" />	
 	<!-- ����Ѹ����AI -->
 		<ai id="20201" skill="30000" skillrate="100" behavior="3" />	
 		

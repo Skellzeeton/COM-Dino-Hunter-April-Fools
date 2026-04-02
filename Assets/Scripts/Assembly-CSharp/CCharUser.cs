@@ -246,32 +246,32 @@ public class CCharUser : CCharPlayer
 
 	public void MoveByCompass(float fRateX, float fRateY)
 	{
-		if (fRateX != 0f || fRateY != 0f)
+		if (m_GameScene.GameStatus == iGameSceneBase.kGameStatus.Pause)
 		{
-			m_v2MoveDir = new Vector2(fRateX, fRateY);
-			m_fCurSpeedMax = m_Property.GetValue(kProEnum.MoveSpeed) * Mathf.Abs(fRateY);
-			m_fCurSpeedSideMax = m_Property.GetValue(kProEnum.MoveSpeed) * Mathf.Abs(fRateX);
+			MoveStop();
+			return;
+		}
+		Vector2 input = new Vector2(fRateX, fRateY);
+		float magnitude = Mathf.Clamp01(input.magnitude);
+		if (magnitude > 0.0001f)
+		{
+			Vector2 dir = input.normalized;
+			m_v2MoveDir = dir;
+			float baseSpeed = m_Property.GetValue(kProEnum.MoveSpeed);
+			float speedScale = magnitude;
+			m_fCurSpeedMax = baseSpeed * Mathf.Abs(dir.y) * speedScale;
+			m_fCurSpeedSideMax = baseSpeed * Mathf.Abs(dir.x) * speedScale;
 			UpdateMoveAnim(m_v2MoveDir);
 			m_CharMoveState = kCharMoveState.Max;
-			if (m_CharMoveState == kCharMoveState.Max)
-			{
-				m_fCurSpeed = m_fCurSpeedMax;
-				m_fCurSpeedSide = m_fCurSpeedSideMax;
-			}
-			if (m_fCurSpeed > m_fCurSpeedMax)
-			{
-				m_fCurSpeed = m_fCurSpeedMax;
-			}
-			if (m_fCurSpeedSide > m_fCurSpeedSideMax)
-			{
-				m_fCurSpeedSide = m_fCurSpeedSideMax;
-			}
-			if (m_fCurSpeed == m_fCurSpeedMax && m_fCurSpeedSide == m_fCurSpeedSideMax)
-			{
-				m_CharMoveState = kCharMoveState.Max;
-			}
+			m_fCurSpeed = m_fCurSpeedMax;
+			m_fCurSpeedSide = m_fCurSpeedSideMax;
+		}
+		else
+		{
+			MoveStop();
 		}
 	}
+
 
 	public void MoveStop()
 	{

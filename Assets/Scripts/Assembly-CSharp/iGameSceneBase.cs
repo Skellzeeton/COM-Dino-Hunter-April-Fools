@@ -778,13 +778,13 @@ public class iGameSceneBase
 		{
 			if (m_bIsSkyScene)
 			{
-				m_User.Property.SetValueBase(kProEnum.MoveSpeed, 10f);
-				m_User.Property.SetValueBase(kProEnum.MoveSpeedAcc, 10f);
+				m_User.Property.SetValueBase(kProEnum.MoveSpeed, 11.1f);
+				m_User.Property.SetValueBase(kProEnum.MoveSpeedAcc, 11.1f);
 			}
 			else
 			{
-				m_User.Property.SetValueBase(kProEnum.MoveSpeed, 6f);
-				m_User.Property.SetValueBase(kProEnum.MoveSpeedAcc, 6f);
+				m_User.Property.SetValueBase(kProEnum.MoveSpeed, 7.7f);
+				m_User.Property.SetValueBase(kProEnum.MoveSpeedAcc, 7.7f);
 			}
 		}
 		bool flag = false;
